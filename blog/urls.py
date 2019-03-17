@@ -1,1 +1,1 @@
-from django.urls import pathfrom . import viewsurlpatterns = [    path('', views.post_list, name = 'post_list'), # 各アプリのURLに名前をつけることができる]
+from django.urls import pathfrom . import viewsurlpatterns = [    path('', views.post_list, name = 'post_list'), # 各アプリのURLに名前をつけることができる    path('post/<int:pk>/', views.post_detail, name = 'post_detail'),]
